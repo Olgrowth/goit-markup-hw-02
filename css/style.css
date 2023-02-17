@@ -1,3 +1,107 @@
 body{
     font-family: 'roboto', sans-serif;
+    
+}
+
+.list{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.header {
+}
+.header-navigation {
+}
+.header-logo {
+}
+.header-list {
+}
+.list {
+}
+.header-item {
+}
+.header-link{
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 2%;
+color: #2E2F42;
+}
+.header-link:hover,
+.header-link:focus {
+    color: red; 
+}
+
+.header-adress {
+}
+
+.header-mailto{
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 2%;
+color: #434455;  
+}
+.header-tel {
+font-style: normal;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 2%;
+color: #434455;
+}
+
+/* ---------------hero------------ */
+.hero {
+}
+.hero-title {
+}
+.btn {
+}
+
+/* -------------------our methods--------------- */
+.methods {
+}
+.methods-list {
+}
+.methods-item {
+}
+.methods-subtitle {
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 2%;
+color: #2E2F42;
+}
+
+.methods-description {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 2%;
+color: #434455;
+}
+/* --------------benefits------------ */
+.benefits {
+}
+.benefits-title {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+ /* ------------our team--------------- */
+.webstudio {
+}
+.webstudio-title {
+font-size: 36;    
+line-height: 1.1;
+letter-spacing: 2%;
+color: #2E2F42;
+}
+.webstudio-list {
+}
+.webstudio-item {
+}
+.webstudio-description {
 }
