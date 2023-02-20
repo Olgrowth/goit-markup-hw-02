@@ -2,11 +2,17 @@
     --main-title-color: #FFFFFF;
     --accent-color: #2E2F42;
     --description-color: #434455;
-    --footer-description-color: #E7E9FC;
     --background-color: #2E2F42;
+    --background-team-color: #F4F4FD;
+    --background-button-color: #4D5AE5;
+    --secondary-button-color: #E7E9FC; 
     --logo-color: #4D5AE5;
     --color-button: #FFFFFF;
     --link-color: #2E2F42;
+    --hover-color: #4D5AE5;
+    --footer-description-color: #E7E9FC;
+    --footer-logo-color: #F4F4FD;
+    --secondary-font: 'Raleway', sans-serif;
 }
 
 
@@ -23,19 +29,63 @@ body{
 a{
     text-decoration: none;
 }
+.title{
+font-family: var(--secondary-font);
+font-weight: 700;
+font-size: 36px;    
+line-height: 1.1;
+letter-spacing: 0.02em;
+}
+.subtitle{
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+.description{
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
 
+.logo{
+    font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer; 
+}
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ----header----- */
 .header {
 }
 .header-navigation {
 }
 
 .header-logo {
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 3%;
-    font-weight: 800;
-    text-transform: uppercase;
+   
     color: var(--accent-color);
 }
 .header-small-logo{
@@ -44,7 +94,7 @@ color: var(--logo-color);
 .header-list {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: var(--accent-color);  
 }
 .list {
@@ -54,39 +104,34 @@ color: var(--logo-color);
 .header-link{
 font-size: 16px;
 line-height: 1.5;
-letter-spacing: 2%;
+letter-spacing: 0.02em;
 color: var(--link-color);
 }
 .header-link:hover,
 .header-link:focus {
-    color: #4D5AE5; 
+    color: var(--hover-color); 
 }
 
 .header-adress {
+font-style: normal;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--description-color);
 }
 
-.header-mailto{
-font-style: normal;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 2%;
-color: var(--description-color);  
+.header-mailto{  
 }
 .header-tel {
-font-style: normal;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 2%;
-color: var(--description-color);
 }
 .header-mailto:hover,
 .header-mailto:focus{
-color: #4D5AE5;
+color: var(--hover-color);
 }
 
 .header-tel:hover,
 .header-tel:focus{
-color: #4D5AE5;
+color: var(--hover-color);
 }
 
 /* ---------------hero------------ */
@@ -94,24 +139,21 @@ color: #4D5AE5;
     background-color: var(--background-color);
 }
 .hero-title {
-font-size: 56px;
 font-weight: 700;
+font-size: 56px;
 line-height: 1.07;
-letter-spacing: 2%;
+letter-spacing: 0.02em;
 color: var(--main-title-color);
 }
-.btn {
- font-size: 16px;
- line-height: 1.5;
- letter-spacing: 4%;
+
+.hero-btn {
  font-family: inherit;
- cursor: pointer; 
  color: var(--color-button);
- background-color: #4D5AE5;  
+ background-color: var(--background-button-color);
 }
 
 .btn:hover .btn:focus{
-    color: #4D5AE5;
+    color: var(--hover-color);
     }
 
 /* -------------------feature--------------- */
@@ -122,41 +164,31 @@ color: var(--main-title-color);
 .feature-item {
 }
 .feature-subtitle {
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 2%;
-font-weight: 500;
-color: var(--scondary-title-color);
+color: var(--accent-color);
 }
 
 .feature-description {
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 2%;
+
 color: var(--description-color);
 }
 /* --------------benefits------------ */
 .benefits {
 }
+
 .benefits-title {
-font-size: 36px;
-line-height: 1.1;
-font-weight: 700;
 color: var(--accent-color);
 }
+
 .benefits-list {
 }
 .benefits-item {
 }
  /* ------------team--------------- */
 .team {
-    background-color: #F4F4FD;
+    background-color: var(--background-team-color);
 }
 .team-title {
-font-size: 36px;    
-line-height: 1.1;
-letter-spacing: 2%;
-font-weight: 700;
+
 color: var(--accent-color);
 }
 .team-list {
@@ -165,16 +197,9 @@ color: var(--accent-color);
 .team-item {
 }
 .team-subtitle {
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 2%;
-    font-weight: 500;
     color: var(--accent-color);
 }
 .team-description {
- font-size: 16px;
- line-height: 1.5;
- letter-spacing: 2%;
  color: var(--description-color);   
 }
 
@@ -182,20 +207,13 @@ color: var(--accent-color);
     background-color: var(--background-color);
 }
 .footer-logo {
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 3%;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #F4F4FD;
+    
+    color: var(--footer-logo-color);
 }
 .footer-small-logo {
     color: var(--logo-color);
 }
 .footer-description{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 2%;
     color: var(--footer-description-color);
 }
 
@@ -206,18 +224,14 @@ color: var(--accent-color);
 .projects-item {
 }
 .projects-btn {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 4%;
-    cursor: pointer;
-    color: #4D5AE5;
-    background-color: #E7E9FC;
+    color: var(--background-button-color);
+    background-color: var(--secondary-button-color);
 }
 
 .projects-list .projects-btn:hover,
 .projects-list .projects-btn:focus {
-    color: #E7E9FC;
-    background-color: #4D5AE5;
+    color: var(--secondary-button-color);
+    background-color: var(--background-button-color);
     }
  
 /* ---------portfolio---------- */
@@ -227,15 +241,8 @@ color: var(--accent-color);
 .portfolio-item {
 }
 .porfolio-subtitle {
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 2%;
-    font-weight: 500;
     color: var(--accent-color);
 }
 .portfolio-description {
- font-size: 16px;
- line-height: 1.5;
- letter-spacing: 2%;
  color: var(--description-color);  
 }
