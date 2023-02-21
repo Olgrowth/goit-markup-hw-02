@@ -4,24 +4,23 @@
     --adress-color: #434455;
     --description-color: #434455;
     --background-color: #2E2F42;
-
     --background-team-color: #F4F4FD;
-
     --background-button-color: #4D5AE5;
-
     --secondary-button-color: #E7E9FC;
-
     --logo-color: #4D5AE5;
-
     --color-button: #FFFFFF;
-
     --link-color: #2E2F42;
-
     --hover-color: #4D5AE5;
-    
     --footer-description-color: #E7E9FC;
     --footer-logo-color: #F4F4FD;
     --secondary-font: 'Raleway', sans-serif;
+
+
+
+
+
+
+
 }
 
 
@@ -111,6 +110,9 @@ color: var(--logo-color);
 }
 
 .header-item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 .header-link{
 font-size: 16px;
